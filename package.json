@@ -1,6 +1,6 @@
 {
   "name": "stitch-library",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "stitch-library React component",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -41,11 +41,21 @@
     "react-dom": "^16.12.0",
     "sass-loader": "^8.0.0"
   },
-  "author": "",
-  "homepage": "",
+  "author": "Jeanette Silvas",
+  "homepage": "https://github.com/jeanettesilvas/stitch-library#readme",
   "license": "MIT",
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeanettesilvas/stitch-library.git"
+  },
   "keywords": [
     "react-component"
-  ]
+  ],
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "bugs": {
+    "url": "https://github.com/jeanettesilvas/stitch-library/issues"
+  }
 }
