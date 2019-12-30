@@ -1,3 +1,5 @@
+var path = require('path')
+
 module.exports = {
   type: 'react-component',
   npm: {
@@ -5,8 +7,8 @@ module.exports = {
     umd: {
       global: 'StitchLibrary',
       externals: {
-        react: 'React'
-      }
-    }
-  }
+        react: 'React',
+      },
+    },
+  },
 }

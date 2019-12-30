@@ -1,17 +1,18 @@
 {
   "name": "stitch-library",
   "version": "0.0.3",
-  "description": "stitch-library React component",
+  "description": "stitch-library React components",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
     "css",
+    "*.scss",
     "es",
     "lib",
     "umd"
   ],
   "scripts": {
-    "build": "nwb build-react-component",
+    "build": "nwb build-react-component --copy-files",
     "clean": "nwb clean-module && nwb clean-demo",
     "prepublishOnly": "npm run build",
     "start": "nwb serve-react-demo",
