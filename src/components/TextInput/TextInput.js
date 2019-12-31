@@ -6,7 +6,7 @@ import './TextInput.scss'
 export const TextInput = props => {
   return (
     <input
-      className="text-input"
+      className={`text-input ${props.className}`}
       placeholder={props.placeholder}
       type={props.type}
       value={props.value}
@@ -15,11 +15,13 @@ export const TextInput = props => {
 }
 
 TextInput.propTypes = {
+  className: PropTypes.string,
   placeholder: PropTypes.string,
-  type: PropTypes.oneOf(['password', 'text']),
+  type: PropTypes.oneOf(['password', 'text', 'email']),
   value: PropTypes.string,
 }
 
 TextInput.defaultProps = {
+  className: '',
   type: 'text',
 }
