@@ -19,7 +19,7 @@ export const TextInputWithIcon = props => {
   }
 
   return (
-    <div className="text-input-with-icon">
+    <div className={`text-input-with-icon ${props.className}`}>
       <TextInput />
       {faIcon && (
         <FontAwesomeIcon icon={faIcon} className="text-input-with-icon__icon" />
@@ -29,9 +29,6 @@ export const TextInputWithIcon = props => {
 }
 
 TextInputWithIcon.propTypes = {
+  className: PropTypes.string,
   icon: PropTypes.string,
-}
-
-TextInputWithIcon.defaultProps = {
-  icon: '',
 }
