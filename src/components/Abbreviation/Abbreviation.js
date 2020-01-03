@@ -5,10 +5,15 @@ import './Abbreviation.scss'
 
 export class Abbreviation extends Component {
   static propTypes = {
+    className: PropTypes.string,
     text: PropTypes.string.isRequired,
   }
 
   render() {
-    return <div className="abbreviation">{this.props.text}</div>
+    return (
+      <div className={`abbreviation ${this.props.className}`}>
+        {this.props.text}
+      </div>
+    )
   }
 }

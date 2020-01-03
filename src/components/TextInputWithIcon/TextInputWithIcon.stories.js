@@ -7,4 +7,4 @@ storiesOf('TextInputWithIcon', module)
     <div style={{ marginTop: '50px', textAlign: 'center' }}>{story()}</div>
   ))
   .add('default', () => <TextInputWithIcon />)
-  .add('search', () => <TextInputWithIcon icon="search" />)
+// .add('search', () => <TextInputWithIcon icon="search" />)
