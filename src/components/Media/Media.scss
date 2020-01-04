@@ -1,0 +1,10 @@
+@import '../../style/global.scss';
+
+.media {
+  border: 5px solid $gray-e;
+  height: 200px;
+  width: 300px;
+
+  &__image {
+  }
+}
