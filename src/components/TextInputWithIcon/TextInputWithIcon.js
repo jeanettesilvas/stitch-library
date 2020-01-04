@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,27 +8,29 @@ import { TextInput } from '../../index'
 
 import './TextInputWithIcon.scss'
 
-export const TextInputWithIcon = props => {
-  // let faIcon
+export class TextInputWithIcon extends PureComponent {
+  static propTypes = {
+    className: PropTypes.string,
+    icon: PropTypes.string,
+  }
 
-  // switch (props.icon) {
-  //   case 'search':
-  //     faIcon = faSearch
-  //     break
-  //   default:
-  // }
+  render() {
+    // let faIcon
 
-  return (
-    <div className={`text-input-with-icon ${props.className}`}>
-      <TextInput />
-      {/* {faIcon && (
-        <FontAwesomeIcon icon={faIcon} className="text-input-with-icon__icon" />
-      )} */}
-    </div>
-  )
-}
+    // switch (props.icon) {
+    //   case 'search':
+    //     faIcon = faSearch
+    //     break
+    //   default:
+    // }
 
-TextInputWithIcon.propTypes = {
-  className: PropTypes.string,
-  icon: PropTypes.string,
+    return (
+      <div className={`text-input-with-icon ${this.props.className}`}>
+        <TextInput />
+        {/* {faIcon && (
+          <FontAwesomeIcon icon={faIcon} className="text-input-with-icon__icon" />
+        )} */}
+      </div>
+    )
+  }
 }

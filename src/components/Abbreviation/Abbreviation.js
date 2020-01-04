@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 
 import './Abbreviation.scss'
 
-export class Abbreviation extends Component {
+export class Abbreviation extends PureComponent {
   static propTypes = {
     className: PropTypes.string,
     text: PropTypes.string.isRequired,

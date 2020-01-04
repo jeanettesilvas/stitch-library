@@ -1,27 +1,29 @@
-import React from 'react'
+import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 
 import './TextInput.scss'
 
-export const TextInput = props => {
-  return (
-    <input
-      className={`text-input ${props.className}`}
-      placeholder={props.placeholder}
-      type={props.type}
-      value={props.value}
-    />
-  )
-}
+export class TextInput extends PureComponent {
+  static propTypes = {
+    className: PropTypes.string,
+    placeholder: PropTypes.string,
+    type: PropTypes.oneOf(['password', 'text', 'email']),
+    value: PropTypes.string,
+  }
 
-TextInput.propTypes = {
-  className: PropTypes.string,
-  placeholder: PropTypes.string,
-  type: PropTypes.oneOf(['password', 'text', 'email']),
-  value: PropTypes.string,
-}
+  static defaultProps = {
+    className: '',
+    type: 'text',
+  }
 
-TextInput.defaultProps = {
-  className: '',
-  type: 'text',
+  render() {
+    return (
+      <input
+        className={`text-input ${this.props.className}`}
+        placeholder={this.props.placeholder}
+        type={this.props.type}
+        value={this.props.value}
+      />
+    )
+  }
 }
