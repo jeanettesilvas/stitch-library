@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 
-import { Button, TextInput } from '../../src'
+import { Button, Text, TextInput } from '../../src'
 
 class Demo extends Component {
   render() {
@@ -10,6 +10,9 @@ class Demo extends Component {
         <h1>stitch-library Demo</h1>
         <div>
           <Button type="primary">button</Button>
+        </div>
+        <div>
+          <Text />
         </div>
         <div>
           <TextInput />

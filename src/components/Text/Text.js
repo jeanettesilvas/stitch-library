@@ -16,15 +16,14 @@ export class Text extends PureComponent {
   }
 
   render() {
-    const classNames = classnames('text', {
-      [this.props.className]: !!this.props.className,
+    const classNames = classnames('text', this.props.className, {
       'text--callout': this.props.type === 'callout',
     })
 
     return (
-      <props.element className={classNames}>
+      <this.props.element className={classNames}>
         {this.props.children}
-      </props.element>
+      </this.props.element>
     )
   }
 }
