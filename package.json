@@ -1,6 +1,6 @@
 {
   "name": "stitch-library",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "stitch-library React components",
   "main": "lib/index.js",
   "module": "es/index.js",
