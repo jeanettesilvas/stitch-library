@@ -1,10 +1,11 @@
 @import '../../style/global.scss';
 
 .media {
-  border: 5px solid $gray-e;
-  height: 200px;
-  width: 300px;
+  background-color: #eee;
+  margin-bottom: 8px;
+  overflow: hidden;
 
   &__image {
+    width: 100%;
   }
 }
