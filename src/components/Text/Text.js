@@ -8,6 +8,7 @@ export class Text extends PureComponent {
   static propTypes = {
     className: PropTypes.string,
     element: PropTypes.oneOf(['p', 'div']),
+    html: PropTypes.string,
     type: PropTypes.oneOf(['callout']),
   }
 
@@ -21,9 +22,18 @@ export class Text extends PureComponent {
     })
 
     return (
-      <this.props.element className={classNames}>
-        {this.props.children}
-      </this.props.element>
+      <>
+        {this.props.html ? (
+          <this.props.element
+            className={classNames}
+            dangerouslySetInnerHTML={{ __html: this.props.html }}
+          />
+        ) : (
+          <this.props.element className={classNames}>
+            {this.props.children}
+          </this.props.element>
+        )}
+      </>
     )
   }
 }

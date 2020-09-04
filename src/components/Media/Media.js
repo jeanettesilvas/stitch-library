@@ -15,6 +15,6 @@ Media.propTypes = {
   alt: PropTypes.string.isRequired,
   className: PropTypes.string,
   height: PropTypes.string,
-  src: PropTypes.string.isRequired,
+  src: PropTypes.string,
   width: PropTypes.string,
 }
