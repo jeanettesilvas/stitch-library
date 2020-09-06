@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "module": "es/index.js",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/@jeanettesilvas"
   },
   "files": [
     "css",
