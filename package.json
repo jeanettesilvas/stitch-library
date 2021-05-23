@@ -1,5 +1,5 @@
 {
-  "name": "stitch-library",
+  "name": "@jeanettesilvas/stitch-library",
   "version": "1.2.1",
   "description": "stitch-library React components",
   "main": "lib/index.js",
