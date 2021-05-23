@@ -1,11 +1,11 @@
 {
-  "name": "@jeanettesilvas/stitch-library",
-  "version": "1.2.4",
+  "name": "stitch-library",
+  "version": "1.2.3",
   "description": "stitch-library React components",
   "main": "lib/index.js",
   "module": "es/index.js",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/@jeanettesilvas"
   },
   "files": [
     "css",
