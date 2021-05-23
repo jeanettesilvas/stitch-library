@@ -1,6 +1,9 @@
-export * from './components/Abbreviation/Abbreviation'
-export * from './components/Button/Button'
-export * from './components/Media/Media'
-export * from './components/Text/Text'
-export * from './components/TextInput/TextInput'
-export * from './components/TextInputWithIcon/TextInputWithIcon'
+import React, {Component} from 'react'
+
+export default class extends Component {
+  render() {
+    return <div>
+      <h2>Welcome to React components</h2>
+    </div>
+  }
+}

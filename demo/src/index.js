@@ -1,24 +1,20 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 
-import { Button, Text, TextInput } from '../../src'
+import Example from '../../src'
+import { Abbreviation, Button, Media, Text, TextInput, TextInputWithIcon } from '../../src/components'
 
-class Demo extends Component {
+export default class Demo extends Component {
   render() {
-    return (
-      <div>
-        <h1>stitch-library Demo</h1>
-        <div>
-          <Button type="primary">button</Button>
-        </div>
-        <div>
-          <Text />
-        </div>
-        <div>
-          <TextInput />
-        </div>
-      </div>
-    )
+    return <div>
+      <h1>stitch-library Demo</h1>
+      <div><Abbreviation text="sc" /></div>
+      <div><Button>Click here</Button></div>
+      <div><Media /></div>
+      <div><Text>sample</Text></div>
+      <div><TextInput /></div>
+      <div><TextInputWithIcon /></div>
+    </div>
   }
 }
 

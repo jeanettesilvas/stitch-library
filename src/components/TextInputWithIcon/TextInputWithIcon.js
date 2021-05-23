@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faSearch } from '@fortawesome/pro-duotone-svg-icons'
 
-import { TextInput } from '../../index'
+import { TextInput } from '../index'
 
 import './TextInputWithIcon.scss'
 
