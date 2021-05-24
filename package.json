@@ -27,13 +27,19 @@
     "react": "^17.0.2"
   },
   "devDependencies": {
+    "@types/react": "^17.0.6",
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
     "classnames": "^2.3.1",
+    "eslint": "^7.27.0",
+    "eslint-plugin-react": "^7.23.2",
     "nwb": "0.25.x",
     "nwb-sass": "^0.10.2",
     "prettier": "2.3.0",
     "prop-types": "^15.7.2",
     "react": "*",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "typescript": "^4.2.4"
   },
   "author": "",
   "homepage": "",
@@ -43,6 +49,7 @@
     "url": "git+https://github.com/jeanettesilvas/stitch-library.git"
   },
   "keywords": [
-    "react-component"
+    "react-component",
+    "component-library"
   ]
 }
