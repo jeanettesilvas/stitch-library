@@ -38,7 +38,10 @@
   "author": "",
   "homepage": "",
   "license": "MIT",
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeanettesilvas/stitch-library.git"
+  },
   "keywords": [
     "react-component"
   ]
