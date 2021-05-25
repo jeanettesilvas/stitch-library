@@ -1,7 +1,7 @@
 import './Abbreviation.scss'
 
 type AbbreviationProps = {
-  className: string
+  className?: string
   text: string
 }
 
