@@ -44,8 +44,8 @@
     "ts-loader": "^8.2.0",
     "typescript": "^4.2.4"
   },
-  "author": "",
-  "homepage": "",
+  "author": "Jeanette Silvas",
+  "homepage": "https://github.com/jeanettesilvas/stitch-library#readme",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -57,5 +57,12 @@
   ],
   "dependencies": {
     "loader-utils": "^2.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/jeanettesilvas/stitch-library/issues"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
   }
 }
