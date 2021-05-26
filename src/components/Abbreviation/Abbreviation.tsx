@@ -1,6 +1,6 @@
 import './Abbreviation.scss'
 
-type AbbreviationProps = {
+interface AbbreviationProps {
   className?: string
   text: string
 }
