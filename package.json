@@ -2,21 +2,23 @@
   "name": "@jeanettesilvas/stitch-library",
   "version": "2.0.3",
   "description": "stitch-library React components",
-  "main": "lib/index.ts",
-  "types": "lib/index.d.ts",
-  "module": "es/index.ts",
+  "main": "es/src/index.js",
+  "types": "es/src/index.d.ts",
+  "module": "es/src/index.ds",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
   "files": [
     "css",
+    "*.scss",
     "es",
-    "lib",
     "umd"
   ],
   "scripts": {
-    "build": "nwb build-react-component --no-demo --copy-files",
+    "build": "nwb build-react-component --copy-files --no-demo && tsc && npm run copy && npm run clean:dupes",
+    "copy": "cp -R ./es/components ./es/src && cp -R ./es/style ./es/src",
     "clean": "nwb clean-module && nwb clean-demo",
+    "clean:dupes": "rm -rf ./es/components && rm -rf ./es/style",
     "prepublishOnly": "npm run build",
     "start": "nwb serve-react-demo",
     "test": "nwb test-react",
