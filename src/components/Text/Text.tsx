@@ -3,7 +3,7 @@ import classnames from 'classnames'
 import './Text.scss'
 
 interface TextProps {
-  children: any
+  children?: any
   className?: string
   element?: 'p' | 'div'
   html?: string
