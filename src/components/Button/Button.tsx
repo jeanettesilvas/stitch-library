@@ -1,9 +1,10 @@
 import classnames from 'classnames'
+import { FC, ReactNode } from 'react'
 
 import './Button.scss'
 
-interface ButtonProps {
-  children: any
+export interface ButtonProps {
+  children: ReactNode
   onClick: () => void
   type?: 'primary' | 'secondary'
 }

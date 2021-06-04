@@ -2,7 +2,7 @@ import classnames from 'classnames'
 
 import './Text.scss'
 
-interface TextProps {
+export interface TextProps {
   children?: JSX.Element | string
   className?: string
   element?: 'p' | 'div'
@@ -26,7 +26,7 @@ export const Text = (props: TextProps) => {
         />
       )}
       {html && element === 'p' && <p className={classNames}>{children}</p>}
-      {!html && children}
+      {!html && <span className={classNames}>{children}</span>}
     </>
   )
 }

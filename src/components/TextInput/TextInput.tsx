@@ -1,6 +1,6 @@
 import './TextInput.scss'
 
-interface TextInputProps {
+export interface TextInputProps {
   className?: string
   placeholder?: string
   type?: 'text' | 'password' | 'email'

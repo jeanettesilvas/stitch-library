@@ -1,6 +1,6 @@
 import './Media.scss'
 
-interface MediaProps {
+export interface MediaProps {
   alt?: string
   className?: string
   height?: string
