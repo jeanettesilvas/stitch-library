@@ -13,7 +13,7 @@ module.exports = {
   webpack: {
     extra: {
       entry: {
-        demo: ["./demo/src/index.js"]
+        demo: ["./demo/src/index.tsx"]
       },
       resolve: {
         extensions: [".ts", ".tsx", ".js"]
@@ -23,6 +23,9 @@ module.exports = {
           { test: /\.tsx?$/, loader: "ts-loader" }
         ]
       },
+    },
+    html: {
+      template: 'demo/src/index.html'
     }
   }
 }

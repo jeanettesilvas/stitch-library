@@ -3,7 +3,7 @@ import classnames from 'classnames'
 import './Text.scss'
 
 interface TextProps {
-  children?: any
+  children?: JSX.Element | string
   className?: string
   element?: 'p' | 'div'
   html?: string
@@ -25,8 +25,8 @@ export const Text = (props: TextProps) => {
           dangerouslySetInnerHTML={{ __html: html }}
         />
       )}
-
       {html && element === 'p' && <p className={classNames}>{children}</p>}
+      {!html && children}
     </>
   )
 }
