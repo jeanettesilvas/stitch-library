@@ -6,9 +6,6 @@ import { Abbreviation, AbbreviationProps } from './Abbreviation'
 export default {
   title: 'Components/Abbreviation',
   component: Abbreviation,
-  argTypes: {
-    text: { control: 'sc' },
-  },
 } as Meta
 
 const Template: Story<AbbreviationProps> = (args) => <Abbreviation {...args} />

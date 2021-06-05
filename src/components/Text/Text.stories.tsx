@@ -6,13 +6,6 @@ import { Text, TextProps } from './Text'
 export default {
   title: 'Components/Text',
   component: Text,
-  argTypes: {
-    children: { control: '' },
-    className: { control: '' },
-    element: { control: 'p' },
-    html: { control: '' },
-    type: { control: '' },
-  },
 } as Meta
 
 const Template: Story<TextProps> = (args) => (

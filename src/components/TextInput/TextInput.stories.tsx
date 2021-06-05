@@ -6,12 +6,6 @@ import { TextInput, TextInputProps } from './TextInput'
 export default {
   title: 'Components/TextInput',
   component: TextInput,
-  argTypes: {
-    className: { control: '' },
-    placeholder: { control: '' },
-    type: { control: 'text' },
-    value: { control: '' },
-  },
 } as Meta
 
 const Template: Story<TextInputProps> = (args) => <TextInput {...args} />

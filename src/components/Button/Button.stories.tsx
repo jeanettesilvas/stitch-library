@@ -6,10 +6,6 @@ import { Button, ButtonProps } from './Button'
 export default {
   title: 'Components/Button',
   component: Button,
-  argTypes: {
-    children: { control: '' },
-    type: { control: 'secondary' },
-  },
 } as Meta
 
 const Template: Story<ButtonProps> = (args) => (
