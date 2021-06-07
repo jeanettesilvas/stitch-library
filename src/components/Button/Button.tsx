@@ -1,5 +1,5 @@
 import classnames from 'classnames'
-import { FC, ReactNode } from 'react'
+import { ReactNode } from 'react'
 
 import './Button.scss'
 
