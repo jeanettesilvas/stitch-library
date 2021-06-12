@@ -2,8 +2,11 @@
 
 .user-nav {
   color: #eee;
+  display: flex;
+  flex-wrap: nowrap;
   font-family: $base-font;
   font-size: 14px;
+  justify-content: flex-end;
 
   &__list {
     display: flex;
