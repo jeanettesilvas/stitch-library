@@ -1,3 +1,5 @@
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faHome, faUserCircle } from '@fortawesome/pro-light-svg-icons'
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -8,3 +10,8 @@ export const parameters = {
     },
   },
 }
+
+library.add(
+  faHome,
+  faUserCircle,
+)

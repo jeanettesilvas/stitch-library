@@ -33,6 +33,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/pro-light-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@storybook/addon-actions": "^6.2.9",
     "@storybook/addon-essentials": "^6.2.9",
     "@storybook/addon-links": "^6.2.9",
