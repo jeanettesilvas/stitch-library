@@ -1,6 +1,6 @@
 {
   "name": "@jeanettesilvas/stitch-library",
-  "version": "2.0.5",
+  "version": "2.1.0",
   "description": "stitch-library React components",
   "main": "es/src/index.js",
   "types": "es/src/index.d.ts",
