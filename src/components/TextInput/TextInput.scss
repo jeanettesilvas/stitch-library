@@ -1,18 +1,50 @@
 @import '../../style/global.scss';
 
 .text-input {
-  border: 1px solid $gray-c;
-  border-radius: 4px;
-  box-sizing: border-box;
-  color: $gray-5;
-  font-family: $base-font;
-  font-size: 16px;
-  padding: $spacing-1x $spacing-2x;
-  transition: all 0.2s;
+  &__field {
+    border: 1px solid $gray-c;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: $gray-3;
+    display: block;
+    font-family: $base-font;
+    font-size: 16px;
+    margin-bottom: 4px;
+    padding: $spacing-1x $spacing-1x;
+    transition: all 0.2s;
 
-  &:focus {
-    border-color: #000;
-    box-shadow: 0 0 5px 0 #ccc;
-    outline: none;
+    &:focus {
+      border-color: #000;
+      box-shadow: 0 0 5px 0 #ccc;
+      outline: none;
+    }
+
+    &--error {
+      border: 1px solid palevioletred;
+    }
+
+    &--warning {
+      border: 1px solid darkorange;
+    }
+  }
+
+  &__message {
+    display: block;
+    font-family: $base-font;
+    font-size: 14px;
+    height: 16px;
+    margin-left: 9px;
+
+    // &--default {
+    //   visibility: hidden;
+    // }
+
+    &--error {
+      color: palevioletred;
+    }
+
+    &--warning {
+      color: darkorange;
+    }
   }
 }

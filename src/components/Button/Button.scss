@@ -3,10 +3,11 @@
 .button {
   background-color: #fff;
   border: 1px solid #dbd4ce;
-  border-radius: 32px;
+  border-radius: 6px;
   font-family: $base-font;
   font-size: 16px;
   padding: 8px 24px;
+  cursor: pointer;
   transition: 0.2s all;
 
   &:hover {

@@ -34,7 +34,7 @@ let Demo = () => {
         </li>
         <li>
           <h2>TextInput</h2>
-          <TextInput />
+          <TextInput onChange={() => {}} />
         </li>
       </ul>
     </div>
