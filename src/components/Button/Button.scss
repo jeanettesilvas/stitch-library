@@ -4,19 +4,49 @@
   background-color: #fff;
   border: 1px solid #dbd4ce;
   border-radius: 6px;
+  display: flex;
+  align-items: center;
   font-family: $base-font;
   font-size: 16px;
   padding: 8px 24px;
+  position: relative;
   cursor: pointer;
+  text-align: center;
   transition: 0.2s all;
 
   &:hover {
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.04);
   }
 
+  &:disabled {
+    background-color: #eee;
+    border-color: #ccc;
+    color: #999;
+    cursor: not-allowed;
+  }
+
   &--primary {
     background-color: #3d3c3a;
     border: 1px solid #3d3c3a;
     color: #fff;
+  }
+
+  &__spinner {
+    display: none;
+
+    &--loading {
+      display: inline-block;
+      left: 0;
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  &__label {
+    visibility: visible;
+
+    &--loading {
+      visibility: hidden;
+    }
   }
 }
