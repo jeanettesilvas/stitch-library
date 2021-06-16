@@ -9,7 +9,7 @@ export interface ButtonProps {
   disabled?: boolean
   onClick: () => void
   status?: 'loading' | 'disabled' | 'active'
-  type?: 'primary' | 'secondary'
+  type?: 'primary' | 'secondary' | 'destructive'
 }
 
 export const Button = (props: ButtonProps) => {
@@ -24,6 +24,7 @@ export const Button = (props: ButtonProps) => {
   let className = classnames({
     button: true,
     'button--primary': type === 'primary',
+    'button--destructive': type === 'destructive',
   })
 
   let spinnerClassnames = classnames('button__spinner', {

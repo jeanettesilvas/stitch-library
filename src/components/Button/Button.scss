@@ -31,6 +31,12 @@
     color: #fff;
   }
 
+  &--destructive {
+    background-color: darkred;
+    border: 1px solid darkred;
+    color: #fff;
+  }
+
   &__spinner {
     display: none;
 
