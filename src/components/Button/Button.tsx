@@ -1,6 +1,7 @@
 import classnames from 'classnames'
 import { ReactNode } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircleNotch } from '@fortawesome/pro-light-svg-icons'
 
 import './Button.scss'
 
@@ -8,7 +9,7 @@ export interface ButtonProps {
   children: ReactNode
   disabled?: boolean
   onClick: () => void
-  status?: 'loading' | 'disabled' | 'active'
+  status?: 'active' | 'disabled' | 'loading'
   type?: 'primary' | 'secondary' | 'destructive'
 }
 
@@ -40,10 +41,7 @@ export const Button = (props: ButtonProps) => {
   return (
     <button className={className} onClick={onClick} disabled={isDisabled}>
       <span className={spinnerClassnames}>
-        <FontAwesomeIcon
-          icon={['fal', 'circle-notch']}
-          className="fa-lg fa-spin"
-        />
+        <FontAwesomeIcon icon={faCircleNotch} className="fa-lg fa-spin" />
       </span>
       <span className={labelClassnames}>{children}</span>
     </button>
