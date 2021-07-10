@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text renders 1`] = `
+<div
+  className="text-input text-input--default"
+>
+  <input
+    className="text-input__field text-input__field--default"
+    onChange={[Function]}
+    value=""
+  />
+  <span
+    className="text-input__message text-input__message--default"
+  >
+    
+  </span>
+</div>
+`;

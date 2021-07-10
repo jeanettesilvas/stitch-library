@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserNav renders 1`] = `
+<nav
+  className="user-nav"
+>
+  <a
+    className="user-nav__link"
+    href="sign-in"
+  >
+    Sign in
+  </a>
+</nav>
+`;

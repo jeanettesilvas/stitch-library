@@ -8,6 +8,6 @@ import {
 
 library.add(faCircleNotch, faHome, faSpinnerThird, faUserCircle)
 
-jest.mock('@fortawesome/react-native-fontawesome', () => ({
+jest.mock('@fortawesome/react-fontawesome', () => ({
   FontAwesomeIcon: '',
 }))
